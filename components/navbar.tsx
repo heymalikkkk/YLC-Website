@@ -27,11 +27,12 @@ export function Navbar() {
           <Image
             src="/logo.png"
             alt="Yokka Logistics Corp."
-            width={120}
-            height={40}
-            className="h-8 w-auto object-contain"
+            width={50}
+            height={50}
+            className="h-10 w-auto object-contain"
             priority
           />
+          <span className="text-xl font-bold tracking-tight text-foreground">YOKKA</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -76,10 +77,11 @@ export function Navbar() {
                 <Image
                   src="/logo.png"
                   alt="Yokka Logistics Corp."
-                  width={120}
-                  height={40}
-                  className="h-8 w-auto object-contain"
+                  width={50}
+                  height={50}
+                  className="h-10 w-auto object-contain"
                 />
+                <span className="text-xl font-bold tracking-tight text-foreground">YOKKA</span>
               </Link>
               <nav className="flex flex-col gap-4">
                 {navLinks.map((link) => (

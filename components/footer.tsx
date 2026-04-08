@@ -27,14 +27,15 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div className="flex flex-col gap-4">
-            <Link href="/">
+            <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/logo-white.png"
+                src="/logo.png"
                 alt="Yokka Logistics Corp."
-                width={140}
-                height={45}
-                className="h-10 w-auto object-contain brightness-0 invert"
+                width={50}
+                height={50}
+                className="h-12 w-auto object-contain"
               />
+              <span className="text-xl font-bold tracking-tight">YOKKA</span>
             </Link>
             <p className="text-sm leading-relaxed text-secondary-foreground/80">
               YOKKA is an emerging international freight forwarding and brokerage company based in the Philippines, providing total logistics solutions worldwide.
