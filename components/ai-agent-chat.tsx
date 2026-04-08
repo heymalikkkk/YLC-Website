@@ -45,7 +45,7 @@ You can also go directly to our quote page for a detailed quote request.
 
   "track shipment": `I apologize, but **shipment tracking is currently not available** through this chat interface.
 
-To track your shipment, please contact our customer service team directly:
+To track your shipment, please contact Yokka Logistics Corp.'s customer service team directly:
 
 **Phone:** (02) 8244-6734
 **Email:** admin@yokka.com.ph
@@ -54,7 +54,7 @@ Our team will be happy to provide you with real-time updates on your shipment st
 
 We're working on adding a self-service tracking feature soon!`,
 
-  "ask services": `YOKKA offers comprehensive logistics solutions to meet all your shipping needs:
+  "ask services": `Yokka Logistics Corp. offers comprehensive logistics solutions to meet all your shipping needs:
 
 **Transportation Services:**
 - **Air Freight** - Fast global delivery for time-sensitive cargo
@@ -74,7 +74,7 @@ We're working on adding a self-service tracking feature soon!`,
 
 Which service would you like to know more about?`,
 
-  default: `Hello! I'm YOKKA's AI assistant, here to help with your logistics inquiries.
+  default: `Hello! I'm Yokka Logistics Corp.'s AI assistant, here to help with your logistics inquiries.
 
 **I can help you with:**
 - Getting shipping quotes
@@ -146,7 +146,7 @@ We navigate complex regulations so you don't have to worry about delays or compl
 Need help with customs clearance? I can connect you with our experts!`
   }
   if (lowerMessage.includes("hello") || lowerMessage.includes("hi") || lowerMessage.includes("hey") || lowerMessage.includes("good morning") || lowerMessage.includes("good afternoon")) {
-    return `Hello! Welcome to YOKKA Logistics.
+    return `Hello! Welcome to Yokka Logistics Corp.
 
 I'm your AI assistant, ready to help with:
 - Shipping quotes and inquiries
@@ -156,7 +156,7 @@ I'm your AI assistant, ready to help with:
 What can I help you with today?`
   }
   if (lowerMessage.includes("contact") || lowerMessage.includes("phone") || lowerMessage.includes("email") || lowerMessage.includes("address") || lowerMessage.includes("location")) {
-    return `You can reach YOKKA Logistics through:
+    return `You can reach Yokka Logistics Corp. through:
 
 **Address:**
 Unit 5, 9/F, 68 Sky 1 Tower
@@ -216,7 +216,7 @@ export function AIAgentChat() {
     {
       id: "1",
       role: "assistant",
-      content: `Hello! I'm YOKKA's AI assistant.
+      content: `Hello! I'm Yokka Logistics Corp.'s AI assistant.
 
 I can help you with:
 - **Getting quotes** for your shipments

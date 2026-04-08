@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Yokka Logistics Corp.",
   },
   description:
-    "YOKKA is an emerging international freight forwarding and brokerage company based in the Philippines. We provide total logistics solutions worldwide.",
+    "Yokka Logistics Corp. is an emerging international freight forwarding and brokerage company based in the Philippines. We provide total logistics solutions worldwide.",
   keywords: [
     "freight forwarding",
     "logistics",

@@ -112,7 +112,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               Key Benefits
             </h2>
             <p className="max-w-2xl text-muted-foreground">
-              Discover why businesses choose YOKKA for their {service.title.toLowerCase()} needs.
+              Discover why businesses choose Yokka Logistics Corp. for their {service.title.toLowerCase()} needs.
             </p>
           </div>
 

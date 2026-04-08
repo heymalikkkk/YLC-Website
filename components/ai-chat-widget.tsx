@@ -20,8 +20,8 @@ const quickPrompts = [
 const aiResponses: Record<string, string> = {
   "get a quote": "I'd be happy to help you get a quote! You can fill out our quote form at /quote, or tell me about your shipment requirements:\n\n- What type of cargo are you shipping?\n- Origin and destination?\n- Approximate weight/volume?\n\nI'll help guide you through the process!",
   "track shipment": "I apologize, but shipment tracking is currently not available through this chat interface. Please contact our customer service team directly at (02) 8244-6734 or email admin@yokka.com.ph with your tracking number for shipment status updates.\n\nWe're working on adding this feature soon!",
-  "ask services": "YOKKA offers comprehensive logistics solutions:\n\n✈️ **Air Freight** - Fast global delivery\n🚢 **Sea Freight** - Cost-effective ocean shipping\n📋 **Customs Brokerage** - Expert clearance\n🚛 **Trucking** - Reliable ground transport\n⚓ **NVOCC Agent** - Consolidation services\n📦 **Cargo Consolidation** - Optimize costs\n🏠 **Door-to-Door** - Complete solutions\n🏭 **Warehousing** - Secure storage\n\nWhich service would you like to know more about?",
-  default: "Thank you for your message! I'm YOKKA's AI assistant, here to help with your logistics inquiries.\n\nI can help you with:\n- Getting a shipping quote\n- Learning about our services\n- General logistics questions\n\nHow can I assist you today?",
+  "ask services": "Yokka Logistics Corp. offers comprehensive logistics solutions:\n\n✈️ **Air Freight** - Fast global delivery\n🚢 **Sea Freight** - Cost-effective ocean shipping\n📋 **Customs Brokerage** - Expert clearance\n🚛 **Trucking** - Reliable ground transport\n⚓ **NVOCC Agent** - Consolidation services\n📦 **Cargo Consolidation** - Optimize costs\n🏠 **Door-to-Door** - Complete solutions\n🏭 **Warehousing** - Secure storage\n\nWhich service would you like to know more about?",
+  default: "Thank you for your message! I'm Yokka Logistics Corp.'s AI assistant, here to help with your logistics inquiries.\n\nI can help you with:\n- Getting a shipping quote\n- Learning about our services\n- General logistics questions\n\nHow can I assist you today?",
 }
 
 function getAIResponse(message: string): string {
@@ -43,10 +43,10 @@ function getAIResponse(message: string): string {
     return "Our **Sea Freight** service provides cost-effective ocean shipping for large volumes. We offer both FCL (Full Container Load) and LCL (Less than Container Load) options.\n\nBenefits:\n- Competitive rates\n- Global port coverage\n- Container tracking\n\nShall I help you get a sea freight quote?"
   }
   if (lowerMessage.includes("hello") || lowerMessage.includes("hi") || lowerMessage.includes("hey")) {
-    return "Hello! Welcome to YOKKA Logistics. 👋\n\nI'm your AI assistant, ready to help with:\n- Shipping quotes\n- Service information\n- General inquiries\n\nHow can I assist you today?"
+    return "Hello! Welcome to Yokka Logistics Corp. 👋\n\nI'm your AI assistant, ready to help with:\n- Shipping quotes\n- Service information\n- General inquiries\n\nHow can I assist you today?"
   }
   if (lowerMessage.includes("contact") || lowerMessage.includes("phone") || lowerMessage.includes("email")) {
-    return "You can reach YOKKA Logistics through:\n\n📍 **Address:** Unit 5, 9/F, 68 Sky 1 Tower, Dasmariñas St., Manila\n📞 **Phone:** (02) 8244-6734\n📧 **Email:** admin@yokka.com.ph\n\nOur team is ready to assist you with all your logistics needs!"
+    return "You can reach Yokka Logistics Corp. through:\n\n📍 **Address:** Unit 5, 9/F, 68 Sky 1 Tower, Dasmariñas St., Manila\n📞 **Phone:** (02) 8244-6734\n📧 **Email:** admin@yokka.com.ph\n\nOur team is ready to assist you with all your logistics needs!"
   }
   
   return aiResponses.default
@@ -58,7 +58,7 @@ export function AIChatWidget() {
     {
       id: "1",
       role: "assistant",
-      content: "Hello! I'm YOKKA's AI assistant. How can I help you with your logistics needs today?",
+      content: "Hello! I'm Yokka Logistics Corp.'s AI assistant. How can I help you with your logistics needs today?",
     },
   ])
   const [input, setInput] = useState("")
@@ -129,7 +129,7 @@ export function AIChatWidget() {
               <Bot className="h-5 w-5" />
             </div>
             <div>
-              <h3 className="font-semibold">YOKKA Assistant</h3>
+              <h3 className="font-semibold">Yokka Assistant</h3>
               <p className="text-xs text-primary-foreground/80">Always here to help</p>
             </div>
           </div>

@@ -1,10 +1,24 @@
+"use client"
+
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, MessageSquare } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function CTASection() {
   return (
-    <section className="relative overflow-hidden bg-secondary py-20 lg:py-28">
+    <section className="relative overflow-hidden py-20 lg:py-28">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/cta-bg.jpg"
+          alt="Shipping containers at port"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-secondary/95" />
+      </div>
+      
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,48,41,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,48,41,0.05)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       <div className="absolute -top-40 right-0 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
@@ -12,7 +26,7 @@ export function CTASection() {
 
       <div className="relative mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
+          <span className="mb-4 inline-block rounded-full bg-primary/20 px-4 py-1.5 text-sm font-medium text-primary">
             Get Started Today
           </span>
           <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-secondary-foreground sm:text-4xl lg:text-5xl">
@@ -32,7 +46,7 @@ export function CTASection() {
               </Button>
             </Link>
             <Link href="/ai-agent">
-              <Button size="lg" variant="outline" className="w-full gap-2 border-secondary-foreground/20 text-secondary-foreground hover:bg-secondary-foreground/10 sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full gap-2 border-secondary-foreground/20 bg-secondary-foreground/5 text-secondary-foreground hover:bg-secondary-foreground/10 sm:w-auto">
                 <MessageSquare className="h-4 w-4" />
                 Chat with AI Agent
               </Button>

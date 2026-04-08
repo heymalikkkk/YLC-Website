@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 import { services } from "@/lib/services-data"
 import { Card, CardContent } from "@/components/ui/card"
@@ -8,14 +9,24 @@ import { Button } from "@/components/ui/button"
 export const metadata: Metadata = {
   title: "Our Services",
   description:
-    "Explore YOKKA's comprehensive logistics services including air freight, sea freight, customs brokerage, trucking, and more.",
+    "Explore Yokka Logistics Corp.'s comprehensive logistics services including air freight, sea freight, customs brokerage, trucking, and more.",
 }
 
 export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-secondary py-16 lg:py-24">
+      <section className="relative overflow-hidden py-16 lg:py-24">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/services-bg.jpg"
+            alt="Logistics operations center"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-secondary/95" />
+        </div>
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,48,41,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,48,41,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
         <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
         

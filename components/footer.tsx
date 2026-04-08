@@ -35,7 +35,7 @@ export function Footer() {
                 height={50}
                 className="h-12 w-auto object-contain"
               />
-              <span className="text-xl font-bold tracking-tight">YOKKA</span>
+              <span className="text-lg font-bold tracking-tight">Yokka Logistics Corp.</span>
             </Link>
             <p className="text-sm leading-relaxed text-secondary-foreground/80">
               YOKKA is an emerging international freight forwarding and brokerage company based in the Philippines, providing total logistics solutions worldwide.

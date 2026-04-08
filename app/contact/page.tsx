@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with YOKKA Logistics Corp. Contact us for inquiries, quotes, or any logistics-related questions.",
+    "Get in touch with Yokka Logistics Corp. Contact us for inquiries, quotes, or any logistics-related questions.",
 }
 
 const contactInfo = [

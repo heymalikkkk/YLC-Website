@@ -80,7 +80,7 @@ export function HeroSection() {
             </h1>
 
             <p className="max-w-xl text-pretty text-lg leading-relaxed text-secondary-foreground/80">
-              YOKKA is an emerging international freight forwarding and brokerage company 
+              Yokka Logistics Corp. is an emerging international freight forwarding and brokerage company 
               based in the Philippines. We provide total logistics solutions worldwide and 
               aim to be at the forefront of global logistics.
             </p>

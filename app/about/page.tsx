@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import {
   ArrowRight,
   Globe,
@@ -18,7 +19,7 @@ import { Card, CardContent } from "@/components/ui/card"
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about YOKKA Logistics Corp., our vision, mission, and core values that drive us to deliver excellence in global logistics.",
+    "Learn about Yokka Logistics Corp., our vision, mission, and core values that drive us to deliver excellence in global logistics.",
 }
 
 const coreValues = [
@@ -71,7 +72,17 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-secondary py-16 lg:py-24">
+      <section className="relative overflow-hidden py-16 lg:py-24">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/about-team.jpg"
+            alt="Yokka Logistics Corp. team"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-secondary/95" />
+        </div>
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,48,41,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,48,41,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
         <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
         <div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
@@ -79,14 +90,14 @@ export default function AboutPage() {
         <div className="relative mx-auto max-w-7xl px-4 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-              About YOKKA
+              About Yokka Logistics Corp.
             </span>
             <h1 className="mb-4 text-balance text-4xl font-bold tracking-tight text-secondary-foreground sm:text-5xl">
               Your Trusted Global{" "}
               <span className="text-primary">Logistics Partner</span>
             </h1>
             <p className="text-pretty text-lg text-secondary-foreground/70">
-              YOKKA is an emerging international freight forwarding and brokerage company
+              Yokka Logistics Corp. is an emerging international freight forwarding and brokerage company
               based in the Philippines. We provide total logistics solutions worldwide
               and aim to be at the forefront of global logistics.
             </p>
@@ -248,7 +259,7 @@ export default function AboutPage() {
               Ready to Partner with Us?
             </h2>
             <p className="mb-8 text-secondary-foreground/70">
-              Experience the YOKKA difference. Let us handle your logistics needs while
+              Experience the Yokka Logistics Corp. difference. Let us handle your logistics needs while
               you focus on growing your business.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">

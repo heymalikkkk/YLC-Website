@@ -4,7 +4,7 @@ import { AIAgentChat } from "@/components/ai-agent-chat"
 export const metadata: Metadata = {
   title: "AI Assistant",
   description:
-    "Chat with YOKKA's AI assistant for instant help with your logistics inquiries, quotes, and service information.",
+    "Chat with Yokka Logistics Corp.'s AI assistant for instant help with your logistics inquiries, quotes, and service information.",
 }
 
 export default function AIAgentPage() {
@@ -17,7 +17,7 @@ export default function AIAgentPage() {
             AI-Powered Support
           </span>
           <h1 className="mb-2 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-            YOKKA AI Assistant
+            Yokka Logistics Corp. AI Assistant
           </h1>
           <p className="text-muted-foreground">
             Get instant answers about our services, request quotes, and more. {"I'm"} here to help 24/7.

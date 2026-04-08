@@ -17,7 +17,7 @@ export function OverviewSection() {
           {/* Content */}
           <div className="flex flex-col gap-6">
             <span className="inline-block w-fit rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-              About YOKKA
+              About Yokka Logistics Corp.
             </span>
             <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Your Trusted Global{" "}

@@ -32,7 +32,7 @@ export function Navbar() {
             className="h-10 w-auto object-contain"
             priority
           />
-          <span className="text-xl font-bold tracking-tight text-foreground">YOKKA</span>
+          <span className="text-lg font-bold tracking-tight text-foreground">Yokka Logistics Corp.</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -81,7 +81,7 @@ export function Navbar() {
                   height={50}
                   className="h-10 w-auto object-contain"
                 />
-                <span className="text-xl font-bold tracking-tight text-foreground">YOKKA</span>
+                <span className="text-lg font-bold tracking-tight text-foreground">Yokka Logistics Corp.</span>
               </Link>
               <nav className="flex flex-col gap-4">
                 {navLinks.map((link) => (
